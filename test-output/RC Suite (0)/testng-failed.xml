@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [RC Suite (0)]" parallel="methods">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://sitgwalmart.myfamilymobile.com"/>
+  <listeners>
+    <listener class-name="MFM_Lite.MFM_Lite.EnvReaderListener"/>
+  </listeners>
+  <test name="RC_Sanity_Testing(failed)" parallel="methods">
+    <classes>
+      <class name="MFM_Lite.MFM_Lite.MFM_Lite">
+        <methods>
+          <include name="getDDBData"/>
+          <include name="chkGoSmart_Pin" invocation-numbers="0"/>
+          <include name="publishReport"/>
+        </methods>
+      </class> <!-- MFM_Lite.MFM_Lite.MFM_Lite -->
+    </classes>
+  </test> <!-- RC_Sanity_Testing(failed) -->
+</suite> <!-- Failed suite [RC Suite (0)] -->

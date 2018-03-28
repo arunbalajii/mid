@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RC Suite" parallel="methods" verbose="2">
+    <listeners>
+        <listener class-name="MFM_Lite.MFM_Lite.EnvReaderListener"/>
+    </listeners>
+    
+     <!--<parameter name="url" value="https://sitci.gosmartmobile.com/wps/portal/home/shop/plans/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOINAww9PZy9DbzdXQMNDByNfV3dPUw8vSyNDfULsh0VAfIFf4M!/" />-->
+    
+    <!--<parameter name="browser" value="sample browser"/>
+    <parameter name="url" value="sample url" />  -->
+ 
+    <parameter name="browser" value="chrome"/>  
+  	<parameter name="url" value="https://sitgwalmart.myfamilymobile.com" />
+    <test name ="RC_Sanity_Testing" verbose="2">
+    	<classes>
+    		<class name="MFM_Lite.MFM_Lite.MFM_Lite"/>
+    	</classes>
+    </test>
+</suite>
